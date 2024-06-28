@@ -26,3 +26,5 @@ gatk VariantsToTable \
         -F HOM-REF -F HOM-VAR -F NO-CALL -F NCALLED -F MULTI-ALLELIC \
         -GF AD -GF DP -GF GT -GF PL -GF GQ\
      -O $output
+
+echo "script17"
