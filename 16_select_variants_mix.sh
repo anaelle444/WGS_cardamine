@@ -20,8 +20,8 @@ module load gatk/4.3.0.0
 
 ref=/scratch/ajj7988/data/cardamina_fastq/CHIR.fasta
 
-input=/scratch/ajj7988/results/85_samples/step15_variantfiltration/chr${i}_filtered.vcf.gz
-output=/scratch/ajj7988/results/85_samples/step16_selectvariants/chr${i}_selected_variants.vcf.gz
+input=/scratch/ajj7988/results/85_samples/step15_hardfilter/chr${i}_filtered_H5LGVDRX5_WGS_C_hirsuta.vcf.gz
+output=/scratch/ajj7988/results/85_samples/step16_selectvariants/chr${i}_selected_H5LGVDRX5_WGS_C_hirsuta.vcf.gz
 
 gatk SelectVariants \
 	-R $ref \

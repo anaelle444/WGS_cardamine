@@ -9,7 +9,7 @@
 #SBATCH --job-name=Table
 #SBATCH --mail-type=END
 #SBATCH --mail-user=ajj7988@nyu.edu
-#SBATCH --output=/scratch/ajj7988/log/week4/85samples/step17_vartotable/Table_%j_%a.out
+#SBATCH --output=/scratch/ajj7988/log/week4/85samples/verification/condition2/Table_%j_%a.out
 #SBATCH --array=1-8
 
 i=${SLURM_ARRAY_TASK_ID}
@@ -17,8 +17,8 @@ i=${SLURM_ARRAY_TASK_ID}
 module purge
 module load gatk/4.3.0.0
 
-input=/scratch/ajj7988/results/85_samples/step16_selectvariants/chr${i}_selected_H5LGVDRX5_WGS_C_hirsuta.vcf.gz  
-output=/scratch/ajj7988/results/85_samples/step17_tables/2_HF_filtered_notcalled_nofiltered/chr${i}_HF_filtered_H5LGVDRX5_WGS_C_hirsuta.table 
+input=/scratch/ajj7988/results/85_samples/verification/cond2/chr${i}_HFonly_selected_H5LGVDRX5_WGS_C_hirsuta.vcf.gz
+output=/scratch/ajj7988/results/85_samples/verification/cond2/chr${i}_HFonly_selected_H5LGVDRX5_WGS_C_hirsuta.table 
 
 gatk VariantsToTable \
         -V ${input} \
