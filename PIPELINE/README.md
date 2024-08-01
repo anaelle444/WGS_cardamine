@@ -1,4 +1,4 @@
-#Pipeline scripts
+# Pipeline scripts
 
 This is the README for the pipeline I used to analyse WGS data of 87 cardamine accessions. All the scripts are numeroted and in order of the work flow. This pipeline preprocess the sequencing data and allow for variant calling and population structure analysis.
 Most of the scripts are written to use an array from 86 to 172 in a HPC environment.
