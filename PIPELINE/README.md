@@ -97,6 +97,7 @@ This script write the sample map that will be used in the Data Base Import, it u
 The script needs to be run as following :
 ```bash
 sbatch 12_write_sample_map.sh 1 #run it 8 times to create the 8 sample maps, one for each chromosome 
+```
 
 **13_GenomicsDBImport.sh**
 
