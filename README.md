@@ -8,6 +8,8 @@ This repository contains all the scripts which are required in order to analyze 
 
 The repository contains all the scripts to run preprocessing of the data, mapping, variant calling, hardfiltering and assessing the extent of population structure. All major steps of the pipeline are summarized below. All the scripts are named in chronological order and contain comments to guide the usage of each script.
 
+This repository contains three different folders: the **pipeline**, the **quality control** scripts, and ***wo_127_138***, which includes the analysis of the data where samples 127 and 138 were removed to explore hypotheses explaining the overall genome variation.
+
 ## Dependencies
 
 - vcftools (v0.1.16)
